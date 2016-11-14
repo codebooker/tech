@@ -14,18 +14,32 @@
     <link rel="shortcut icon" type="image/ico" href="images/favicon.ico" /> </head>
 
 <body>
+    <!-- Dropdown Structure -->
+    <ul id="dropdown1" class="dropdown-content">
+        <li><a href="#!">Energy Reduction</a></li>
+        <li><a href="#!">Energy Generation</a></li>
+        <li><a href="#!">Energy Storage</a></li>
+    </ul>
+    <ul id="dropdown2" class="dropdown-content">
+        <li><a href="#!">Partners</a></li>
+    </ul>
+    <ul id="dropdown3" class="dropdown-content">
+        <li><a href="#!">Solar Equipment Guides</a></li>
+        <li><a href="#!">Florida Incentive Programs</a></li>
+        <li><a href="#!">Free Online Courses</a></li>
+    </ul>
     <nav class="white" role="navigation">
         <div class="nav-wrapper container">
             <a id="logo-container" href="#" class="blue-text text-darken-3 brand-logo center"><img style="max-height:55px;padding-top:6px;padding-bottom:5px;" src="images/logo.png"></a>
             <ul class="left hide-on-med-and-down">
-                <li><a class="blue-text text-darken-3" href="#1">Navbar Link 1</a></li>
-                <li><a class="blue-text text-darken-3" href="#2">Navbar Link 2</a></li>
-                <li><a class="blue-text text-darken-3" href="#3">Navbar Link 3</a></li>
+                <li><a class="blue-text text-darken-3" href="#1">Home</a></li>
+                <li><a class="blue-text text-darken-3" href="#2">About Us</a></li>
+                <li><a class="dropdown-button blue-text text-darken-3" href="#!" data-activates="dropdown1">Residential<i class="material-icons right">arrow_drop_down</i></a></li>
             </ul>
             <ul class="right hide-on-med-and-down">
-                <li><a class="blue-text text-darken-3" href="#4">Navbar Link 4</a></li>
-                <li><a class="blue-text text-darken-3" href="#5">Navbar Link 5</a></li>
-                <li><a class="blue-text text-darken-3" href="#6">Navbar Link 6</a></li>
+                <li><a class="dropdown-button blue-text text-darken-3" href="#!" data-activates="dropdown2">Company<i class="material-icons right">arrow_drop_down</i></a></li>
+                <li><a class="dropdown-button blue-text text-darken-3" href="#!" data-activates="dropdown3">Solar Education<i class="material-icons right">arrow_drop_down</i></a></li>
+                <li><a class="blue-text text-darken-3" href="#5">Tools</a></li>
             </ul>
             <ul id="nav-mobile" class="side-nav">
                 <li><a class="blue-text text-darken-3" href="#1">Navbar Link 1</a></li>
@@ -69,11 +83,10 @@
         <br>
         <div class="section"> </div>
     </div>
-    <footer class="page-footer orange">
+    <footer class="page-footer grey darken-3">
         <div class="container">
             <div class="row">
-                <div class="col l6 s12">
-                    <h5 class="white-text">Company Bio</h5>
+                <div class="col l6 s12"> <img width="65px" src="images/logo.png">
                     <p class="grey-text text-lighten-4">Est legam occaecat relinqueret in nisi appellat e efflorescere, ingeniis nam quorum nescius, do cillum commodo fabulas. Culpa quo senserit si fabulas ubi quorum. Lorem ubi ea fugiat senserit, minim ea arbitror eu irure. Pariatur a offendit hic illum commodo possumus qui est magna amet nulla aliquip id iis incurreret voluptatibus. Te quorum incididunt ita litteris concursionibus aut ullamco ad an dolor id anim qui ita legam excepteur eiusmod nam quibusdam ipsum .</p>
                 </div>
                 <div class="col l3 s12">
@@ -88,16 +101,18 @@
                 <div class="col l3 s12">
                     <h5 class="white-text">Connect</h5>
                     <ul>
-                        <li><a class="white-text" href="#!">Link 1</a></li>
-                        <li><a class="white-text" href="#!">Link 2</a></li>
-                        <li><a class="white-text" href="#!">Link 3</a></li>
-                        <li><a class="white-text" href="#!">Link 4</a></li>
+                        <li><a class="white-text" href="#!"><i class="fa fa-facebook"></i> </a> <a class="white-text" href="#!"><i class="fa fa-envelope"></i> </a> <a class="white-text" href="#!"><i class="fa fa-instagram"></i></a></li>
                     </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12 m12 l12">
+                <div class="center white-text">© Sunsaris, Inc. 2016 &nbsp;| &nbsp;<a class="white-text" href="/privacy.html">Privacy Policy</a></div>
                 </div>
             </div>
         </div>
         <div class="footer-copyright">
-            <div class="container"> Designed by <a class="orange-text text-lighten-3" href="https://specx.tech/">Specx Design and Development</a> </div>
+            <div class="container"> Designed by <a class="grey-text text-lighten-1" href="https://specx.tech/">Specx Design and Development</a> </div>
         </div>
     </footer>
     <!-- Modal Structure -->
@@ -126,13 +141,15 @@
                     <h2 class="fs-title">Email and Phone Number</h2>
                     <h3 class="fs-subtitle">Please Enter Your Email Address and Phone Number</h3>
                     <input placeholder="Email Address" id="email" type="email" class="validate">
-                    <input placeholder="Telephone Number" id="telephone" type="tel" class="validate"> <br>
+                    <input placeholder="Telephone Number" id="telephone" type="tel" class="validate">
+                    <br>
                     <input type="button" name="previous" class="previous action-button" value="Previous" />
                     <input type="button" name="next" class="next action-button" value="Next" /> </fieldset>
                 <fieldset>
                     <h2 class="fs-title">Zip Code</h2>
                     <h3 class="fs-subtitle">Please Enter Your Five Digit Zip Code</h3>
-                    <input placeholder="Zip Code" id="" class="validate" type="text" value="" pattern="\d{5}-?(\d{4})?"> <br>
+                    <input placeholder="Zip Code" id="" class="validate" type="text" value="" pattern="\d{5}-?(\d{4})?">
+                    <br>
                     <input type="button" name="previous" class="previous action-button" value="Previous" />
                     <input type="button" name="next" class="next action-button" value="Next" /> </fieldset>
                 <fieldset>
@@ -149,7 +166,8 @@
                 <fieldset>
                     <h2 class="fs-title">Electric Bill</h2>
                     <h3 class="fs-subtitle">What is Your Average Monthly Electric Bill (In Dollars)</h3>
-                    <input type="range" id="test5" min="50" max="1000" /> <br>
+                    <input type="range" id="test5" min="50" max="1000" />
+                    <br>
                     <input type="button" name="previous" class="previous action-button" value="Previous" />
                     <input type="button" name="next" class="next action-button" value="Next" /> </fieldset>
                 <fieldset>
@@ -209,16 +227,19 @@
     <script src="js/init.js" async></script>
     <script src="js/form.js" async></script>
     <script src="js/jquery.easing.min.js" async></script>
-    <script>
+    <script type="text/javascript">
         $(document).ready(function () {
             // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
             $('.modal').modal();
         });
     </script>
-    <script>
+    <script type="text/javascript">
         $(document).ready(function () {
             $('select').material_select();
         });
+    </script>
+    <script type="text/javascript">
+        $(".dropdown-button").dropdown();
     </script>
 </body>
 
