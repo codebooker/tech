@@ -62,14 +62,14 @@ body {
 	margin-bottom: 10px;
 	width: 100%;
 	box-sizing: border-box;
-	font-family: montserrat;
+	font-family: Roboto;
 	color: #2C3E50;
 	font-size: 13px;
 }
 /*buttons*/
 #msform .action-button {
 	width: 100px;
-	background: blue;
+	background: #1565c0;
 	font-weight: bold;
 	color: white;
 	border: 0 none;
@@ -79,7 +79,7 @@ body {
 	margin: 10px 5px;
 }
 #msform .action-button:hover, #msform .action-button:focus {
-	box-shadow: 0 0 0 2px white, 0 0 0 3px blue;
+	box-shadow: 0 0 0 2px white, 0 0 0 3px #1565c0;
 }
 /*headings*/
 .fs-title {
@@ -119,7 +119,7 @@ body {
 	font-size: 10px;
 	color: #333;
 	background: white;
-	border-radius: 3px;
+	border-radius: 11px;
 	margin: 0 auto 5px auto;
 }
 /*progressbar connectors*/
@@ -140,6 +140,6 @@ body {
 /*marking active/completed steps green*/
 /*The number of the step and the connector before it = green*/
 #progressbar li.active:before,  #progressbar li.active:after{
-	background: blue;
+	background: #1565c0;
 	color: white;
 }
