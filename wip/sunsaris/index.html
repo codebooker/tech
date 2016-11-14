@@ -3,9 +3,21 @@
 <html lang="en">
 
 <head>
+    <!-- Meta Tags -->
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
+    <meta name="Description" content="This Is A Tagline In The File!!!">
+    <meta name="Keywords" content="Keywords">
+    <!-- OG Properties -->
+    <meta property="og:image" content="https://specx.tech/wip/sunsaris/images/logo.png" />
+    <meta property="og:description" content="Insert Tagline Here!!" />
+    <meta property="og:url" content="https://specx.tech/wip/sunsaris/" />
+    <meta property="og:title" content="Sunsaris Solar" />
     <title>Sunsaris Solar | Home</title>
+    <!-- Chrome, Firefox OS, Opera and Vivaldi Color -->
+    <meta name="theme-color" content="#1565c0">
+    <!-- Windows Phone Color-->
+    <meta name="msapplication-navbutton-color" content="#1565c0">
     <!-- CSS  -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
@@ -14,7 +26,7 @@
     <link rel="shortcut icon" type="image/ico" href="images/favicon.ico" /> </head>
 
 <body>
-    <!-- Dropdown Structure -->
+    <!-- Navbar Dropdown Structure -->
     <ul id="dropdown1" class="dropdown-content">
         <li><a class="blue-text text-darken-3" href="#!">Energy Reduction</a></li>
         <li><a class="blue-text text-darken-3" href="#!">Energy Generation</a></li>
@@ -28,9 +40,11 @@
         <li><a class="blue-text text-darken-3" href="#!">Florida Incentive Programs</a></li>
         <li><a class="blue-text text-darken-3" href="#!">Free Online Courses</a></li>
     </ul>
+    <!-- Navbar -->
     <nav class="white" role="navigation">
         <div class="nav-wrapper container">
             <a id="logo-container" href="#" class="blue-text text-darken-3 brand-logo center"><img style="max-height:55px;padding-top:6px;padding-bottom:5px;" src="images/logo.png"></a>
+            <!-- Desktop Nav Items -->
             <ul class="left hide-on-med-and-down">
                 <li><a class="blue-text text-darken-3" href="#1">Home</a></li>
                 <li><a class="blue-text text-darken-3" href="#2">About Us</a></li>
@@ -41,6 +55,7 @@
                 <li><a class="dropdown-button blue-text text-darken-3" href="#!" data-activates="dropdown3">Solar Education<i class="material-icons right">arrow_drop_down</i></a></li>
                 <li><a class="blue-text text-darken-3" href="#5">Tools</a></li>
             </ul>
+            <!-- Mobile Nav Items -->
             <ul id="nav-mobile" class="side-nav">
                 <li><a class="blue-text text-darken-3" href="#1">Navbar Link 1</a></li>
                 <li><a class="blue-text text-darken-3" href="#2">Navbar Link 2</a></li>
@@ -60,8 +75,10 @@
                         </div>
                     </li>
                 </ul>
-            </ul><a href="#" data-activates="nav-mobile" class="button-collapse"><i class="blue-text text-darken-3 fa fa-bars fa-2x"></i></a></div>
+            </ul>
+            <!-- Mobile Nav Menu Button --><a href="#" data-activates="nav-mobile" class="button-collapse"><i class="blue-text text-darken-3 fa fa-bars fa-2x"></i></a></div>
     </nav>
+    <!-- Main Part Of Page -->
     <div class="container section bg1">
         <div class="row">
             <div class="col l12 m12 s12">
@@ -93,8 +110,11 @@
         </div>
         <br>
         <br>
-        <div class="section"> </div>
+        <div class="section">
+            <!-- Empty Section -->
+        </div>
     </div>
+    <!-- Footer -->
     <footer class="page-footer grey darken-3">
         <div class="container">
             <div class="row">
@@ -128,7 +148,7 @@
             <div class="container"> Designed by <a class="grey-text" href="https://specx.tech/">Specx Design and Development</a> </div>
         </div>
     </footer>
-    <!-- Modal Structure -->
+    <!-- Modal 1's Structure -->
     <div id="modal1" class="modal modal-fixed-footer">
         <div class="modal-content grey darken-3">
             <form id="msform">
@@ -229,6 +249,7 @@
         </div>
         <div class="modal-footer grey darken-3"> <a href="#!" class="white-text modal-action modal-close waves-effect waves-green btn-flat">Close</a> </div>
     </div>
+    <!-- Modal 2's Structure -->
     <div id="modal2" class="modal">
         <div class="modal-content">
             <h1 class="center">You Could Save $x.xx Per Year By Switching To Solar</h1> </div>
@@ -236,22 +257,24 @@
     </div>
     <!--  Scripts-->
     <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
     <script src="js/init.js"></script>
     <script src="js/form.js"></script>
     <script src="js/jquery.easing.min.js"></script>
+    <!-- Modal Trigger Script -->
     <script type="text/javascript">
         $(document).ready(function () {
             // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
             $('.modal').modal();
         });
     </script>
+    <!-- Form Dropdown Trigger Script -->
     <script type="text/javascript">
         $(document).ready(function () {
             $('select').material_select();
         });
     </script>
+    <!-- Nav Dropdown Trigger Script -->
     <script type="text/javascript">
         $(".dropdown-button").dropdown();
     </script>
