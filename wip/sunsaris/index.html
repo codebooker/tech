@@ -43,109 +43,6 @@
                     <div class="col s12 m12 l12 center">
                         <h2 class="white-text">Interested In Solar? Click The Button Below To Calculate Your Potential Yearly Savings</h2>
                         <!-- Modal Trigger --><a class="waves-effect waves-light btn" href="#modal1">Click here To Begin</a></div>
-                    <!-- Modal Structure -->
-                    <div id="modal1" class="modal modal-fixed-footer">
-                        <div class="modal-content grey darken-3">
-                            <form id="msform">
-                                <!-- progressbar -->
-                                <ul id="progressbar">
-                                    <li class="active">Personal Info </li>
-                                    <li>Email and Phone Number </li>
-                                    <li>Zip Code </li>
-                                    <li>Homeowner </li>
-                                    <li>Electric Bill </li>
-                                    <li>Shade Amount </li>
-                                    <li>Annual Household Income </li>
-                                    <li>Credit Score </li>
-                                </ul>
-                                <!-- fieldsets -->
-                                <fieldset>
-                                    <h2 class="fs-title">Personal Information</h2>
-                                    <h3 class="fs-subtitle">Please Enter Your First And Last Names</h3>
-                                    <input placeholder="First Name" id="first_name" type="text" class="validate">
-                                    <input placeholder="Last Name" id="last_name" type="text" class="validate">
-                                    <input type="button" name="next" class="next action-button" value="Next" /> </fieldset>
-                                <fieldset>
-                                    <h2 class="fs-title">Email and Phone Number</h2>
-                                    <h3 class="fs-subtitle">Please Enter Your Email Address and Phone Number</h3>
-                                    <input placeholder="Email Address" id="email" type="email" class="validate">
-                                    <input placeholder="Telephone Number" id="telephone" type="tel" class="validate"> </br>
-                                    <input type="button" name="previous" class="previous action-button" value="Previous" />
-                                    <input type="button" name="next" class="next action-button" value="Next" /> </fieldset>
-                                <fieldset>
-                                    <h2 class="fs-title">Zip Code</h2>
-                                    <h3 class="fs-subtitle">Please Enter Your Five Digit Zip Code</h3>
-                                    <input placeholder="Zip Code" id="" class="validate" type="text" value="" pattern="\d{5}-?(\d{4})?"> </br>
-                                    <input type="button" name="previous" class="previous action-button" value="Previous" />
-                                    <input type="button" name="next" class="next action-button" value="Next" /> </fieldset>
-                                <fieldset>
-                                    <h2 class="fs-title">Homeowner</h2>
-                                    <h3 class="fs-subtitle">Are Your A Homeowner?</h3>
-                                    <select>
-                                        <option value="" disabled selected>Are You A Homeowner?</option>
-                                        <option value="1">Yes</option>
-                                        <option value="2">No</option>
-                                    </select>
-                                    </br>
-                                    <input type="button" name="previous" class="previous action-button" value="Previous" />
-                                    <input type="button" name="next" class="next action-button" value="Next" /> </fieldset>
-                                <fieldset>
-                                    <h2 class="fs-title">Electric Bill</h2>
-                                    <h3 class="fs-subtitle">What is Your Average Monthly Electric Bill (In Dollars)</h3>
-                                    <input type="range" id="test5" min="50" max="1000" /> </br>
-                                    <input type="button" name="previous" class="previous action-button" value="Previous" />
-                                    <input type="button" name="next" class="next action-button" value="Next" /> </fieldset>
-                                <fieldset>
-                                    <h2 class="fs-title">Shade Amount</h2>
-                                    <h3 class="fs-subtitle">How Much Shade Does Your Home Get?</h3>
-                                    <select>
-                                        <option value="" disabled selected>How Much Shade Does Your Home Get?</option>
-                                        <option value="1">A Lot Of Shade</option>
-                                        <option value="2">Moderate Shade</option>
-                                        <option value="3">A Little Shade</option>
-                                        <option value="4">No Shade</option>
-                                    </select>
-                                    </br>
-                                    <input type="button" name="previous" class="previous action-button" value="Previous" />
-                                    <input type="button" name="next" class="next action-button" value="Next" /> </fieldset>
-                                <fieldset>
-                                    <h2 class="fs-title">Annual Household Income</h2>
-                                    <h3 class="fs-subtitle">What Is Your Annual Household Income?</h3>
-                                    <select>
-                                        <option value="" disabled selected>What Is Your Annual Household Income?</option>
-                                        <option value="1">$0 - $25,000</option>
-                                        <option value="2">$25,000 - $50,000</option>
-                                        <option value="3">$50,000 - $100,000</option>
-                                        <option value="4">$100,000 - $200,000</option>
-                                        <option value="4">$200,000 +</option>
-                                    </select>
-                                    </br>
-                                    <input type="button" name="previous" class="previous action-button" value="Previous" />
-                                    <input type="button" name="next" class="next action-button" value="Next" /> </fieldset>
-                                <fieldset>
-                                    <h2 class="fs-title">Credit Score</h2>
-                                    <h3 class="fs-subtitle">What Is Your Credit Score?</h3>
-                                    <select>
-                                        <option value="" disabled selected>What Is Your Credit Score?</option>
-                                        <option value="1">Below 500</option>
-                                        <option value="2">500 - 600</option>
-                                        <option value="3">600 - 700</option>
-                                        <option value="4">700 - 800</option>
-                                        <option value="4">Above 800</option>
-                                    </select>
-                                    <input type="button" name="previous" class="previous action-button" value="Previous" />
-                                    <input type="submit" name="submit" class="submit action-button" value="Calculate" onclick="Materialize.toast('Thank You, We Are Calculating Your Savings', 3000, 'rounded');$('#modal1').modal('close');setTimeout(function () {
-        $('#modal2').modal('open');
-    }, 2500);" /> </fieldset>
-                            </form>
-                        </div>
-                        <div class="modal-footer grey darken-3"> <a href="#!" class="white-text modal-action modal-close waves-effect waves-green btn-flat">Close</a> </div>
-                    </div>
-                    <div id="modal2" class="modal">
-                        <div class="modal-content">
-                            <h1 class="center">You Could Save $x.xx Per Year By Switching To Solar</h1> </div>
-                        <div class="modal-footer grey lighten-4"> <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Close</a> </div>
-                    </div>
                 </div>
             </div>
             <!--   Icon Section   -->
@@ -203,6 +100,109 @@
             <div class="container"> Designed by <a class="orange-text text-lighten-3" href="https://specx.tech/">Specx Design and Development</a> </div>
         </div>
     </footer>
+    <!-- Modal Structure -->
+    <div id="modal1" class="modal modal-fixed-footer">
+        <div class="modal-content grey darken-3">
+            <form id="msform">
+                <!-- progressbar -->
+                <ul id="progressbar">
+                    <li class="active">Personal Info </li>
+                    <li>Email and Phone Number </li>
+                    <li>Zip Code </li>
+                    <li>Homeowner </li>
+                    <li>Electric Bill </li>
+                    <li>Shade Amount </li>
+                    <li>Annual Household Income </li>
+                    <li>Credit Score </li>
+                </ul>
+                <!-- fieldsets -->
+                <fieldset>
+                    <h2 class="fs-title">Personal Information</h2>
+                    <h3 class="fs-subtitle">Please Enter Your First And Last Names</h3>
+                    <input placeholder="First Name" id="first_name" type="text" class="validate">
+                    <input placeholder="Last Name" id="last_name" type="text" class="validate">
+                    <input type="button" name="next" class="next action-button" value="Next" /> </fieldset>
+                <fieldset>
+                    <h2 class="fs-title">Email and Phone Number</h2>
+                    <h3 class="fs-subtitle">Please Enter Your Email Address and Phone Number</h3>
+                    <input placeholder="Email Address" id="email" type="email" class="validate">
+                    <input placeholder="Telephone Number" id="telephone" type="tel" class="validate"> </br>
+                    <input type="button" name="previous" class="previous action-button" value="Previous" />
+                    <input type="button" name="next" class="next action-button" value="Next" /> </fieldset>
+                <fieldset>
+                    <h2 class="fs-title">Zip Code</h2>
+                    <h3 class="fs-subtitle">Please Enter Your Five Digit Zip Code</h3>
+                    <input placeholder="Zip Code" id="" class="validate" type="text" value="" pattern="\d{5}-?(\d{4})?"> </br>
+                    <input type="button" name="previous" class="previous action-button" value="Previous" />
+                    <input type="button" name="next" class="next action-button" value="Next" /> </fieldset>
+                <fieldset>
+                    <h2 class="fs-title">Homeowner</h2>
+                    <h3 class="fs-subtitle">Are Your A Homeowner?</h3>
+                    <select>
+                        <option value="" disabled selected>Are You A Homeowner?</option>
+                        <option value="1">Yes</option>
+                        <option value="2">No</option>
+                    </select>
+                    </br>
+                    <input type="button" name="previous" class="previous action-button" value="Previous" />
+                    <input type="button" name="next" class="next action-button" value="Next" /> </fieldset>
+                <fieldset>
+                    <h2 class="fs-title">Electric Bill</h2>
+                    <h3 class="fs-subtitle">What is Your Average Monthly Electric Bill (In Dollars)</h3>
+                    <input type="range" id="test5" min="50" max="1000" /> </br>
+                    <input type="button" name="previous" class="previous action-button" value="Previous" />
+                    <input type="button" name="next" class="next action-button" value="Next" /> </fieldset>
+                <fieldset>
+                    <h2 class="fs-title">Shade Amount</h2>
+                    <h3 class="fs-subtitle">How Much Shade Does Your Home Get?</h3>
+                    <select>
+                        <option value="" disabled selected>How Much Shade Does Your Home Get?</option>
+                        <option value="1">A Lot Of Shade</option>
+                        <option value="2">Moderate Shade</option>
+                        <option value="3">A Little Shade</option>
+                        <option value="4">No Shade</option>
+                    </select>
+                    </br>
+                    <input type="button" name="previous" class="previous action-button" value="Previous" />
+                    <input type="button" name="next" class="next action-button" value="Next" /> </fieldset>
+                <fieldset>
+                    <h2 class="fs-title">Annual Household Income</h2>
+                    <h3 class="fs-subtitle">What Is Your Annual Household Income?</h3>
+                    <select>
+                        <option value="" disabled selected>What Is Your Annual Household Income?</option>
+                        <option value="1">$0 - $25,000</option>
+                        <option value="2">$25,000 - $50,000</option>
+                        <option value="3">$50,000 - $100,000</option>
+                        <option value="4">$100,000 - $200,000</option>
+                        <option value="4">$200,000 +</option>
+                    </select>
+                    </br>
+                    <input type="button" name="previous" class="previous action-button" value="Previous" />
+                    <input type="button" name="next" class="next action-button" value="Next" /> </fieldset>
+                <fieldset>
+                    <h2 class="fs-title">Credit Score</h2>
+                    <h3 class="fs-subtitle">What Is Your Credit Score?</h3>
+                    <select>
+                        <option value="" disabled selected>What Is Your Credit Score?</option>
+                        <option value="1">Below 500</option>
+                        <option value="2">500 - 600</option>
+                        <option value="3">600 - 700</option>
+                        <option value="4">700 - 800</option>
+                        <option value="4">Above 800</option>
+                    </select>
+                    <input type="button" name="previous" class="previous action-button" value="Previous" />
+                    <input type="submit" name="submit" class="submit action-button" value="Calculate" onclick="Materialize.toast('Thank You, We Are Calculating Your Savings', 3000, 'rounded');$('#modal1').modal('close');setTimeout(function () {
+        $('#modal2').modal('open');
+    }, 2500);" /> </fieldset>
+            </form>
+        </div>
+        <div class="modal-footer grey darken-3"> <a href="#!" class="white-text modal-action modal-close waves-effect waves-green btn-flat">Close</a> </div>
+    </div>
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+            <h1 class="center">You Could Save $x.xx Per Year By Switching To Solar</h1> </div>
+        <div class="modal-footer grey lighten-4"> <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Close</a> </div>
+    </div>
     <!--  Scripts-->
     <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="js/materialize.js"></script>
