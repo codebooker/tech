@@ -11,7 +11,9 @@
     <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
     <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
     <link rel="stylesheet" href="css/font-awesome.min.css">
-    <link rel="shortcut icon" type="image/ico" href="images/favicon.ico" /> </head>
+    <link rel="shortcut icon" type="image/ico" href="images/favicon.ico" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+</head>
 
 <body>
     <nav class="white" role="navigation">
@@ -40,132 +42,180 @@
         <div class="container section bg1">
             <div class="row">
                 <div class="col l12 m12 s12">
-                    <form id="calculatorform" action="//LOREMIPSUM" method="post">
-                        <div class="carousel carousel-slider center">
-                            <div class="carousel-item carousel-fixed-item white-text" href="#one!">
-                                <div class="vertical-align">
-                                    <h3>Calculate How Much You Could Save!</h3>
-                                    <h5></h5> <a class="startbutton waves-effect waves-light btn">Calculate Now!</a> </div>
-                            </div>
-                            <div class="carousel-item carousel-fixed-item red white-text" href="#one!">
-                                <div class="vertical-align container">
-                                    <input placeholder="First Name" id="first_name" type="text" class="validate">
-                                    <div class="center"> <a class="prev waves-effect waves-light btn"><i class="white-text fa fa-arrow-left"></i>  Back</a> <a class="next waves-effect waves-light btn">Next  <i class="white-text fa fa-arrow-right"></i></a> </div>
-                                </div>
-                            </div>
-                            <div class="carousel-item carousel-fixed-item amber white-text" href="#two!">
-                                <div class="vertical-align container">
-                                    <input placeholder="Last Name" id="last_name" type="text" class="validate">
-                                    <div class="center"> <a class="prev waves-effect waves-light btn"><i class="white-text fa fa-arrow-left"></i>  Back</a> <a class="next waves-effect waves-light btn">Next  <i class="white-text fa fa-arrow-right"></i></a> </div>
-                                </div>
-                            </div>
-                            <div class="carousel-item carousel-fixed-item teal white-text" href="#three!">
-                                <div class="vertical-align container">
-                                    <input name="postalCode" type="number" class="validate" placeholder="Zip Code" required="" min="0" max="99999">
-                                    <div class="center"> <a class="prev waves-effect waves-light btn"><i class="white-text fa fa-arrow-left"></i>  Back</a> <a class="next waves-effect waves-light btn">Next  <i class="white-text fa fa-arrow-right"></i></a> </div>
-                                </div>
-                            </div>
-                            <div class="carousel-item carousel-fixed-item green white-text" href="#three!">
-                                <div class="vertical-align container">
-                                    <select style="height:120px;">
-                                        <option value="" disabled selected>How Much Is Your Bill Each Month</option>
-                                        <option value="1">$50-$100</option>
-                                        <option value="1">$100-$150</option>
-                                        <option value="1">$150-$200</option>
-                                        <option value="1">$200-$250</option>
-                                        <option value="1">$250-$300</option>
-                                        <option value="1">$300-$350</option>
-                                        <option value="1">$350-$400</option>
-                                        <option value="1">$400-$450</option>
-                                        <option value="1">$450-$500</option>
-                                        <option value="1">$500-$550</option>
-                                        <option value="1">$550-$600</option>
-                                        <option value="1">$600-$650</option>
-                                        <option value="1">$650-$700</option>
-                                        <option value="1">$700+</option>
-                                    </select>
-                                    <div class="center"> <a class="prev waves-effect waves-light btn"><i class="white-text fa fa-arrow-left"></i>  Back</a> <a class="next waves-effect waves-light btn">Next  <i class="white-text fa fa-arrow-right"></i></a> </div>
-                                </div>
-                            </div>
-                            <div class="carousel-item carousel-fixed-item orange white-text" href="#three!">
-                                <div class="vertical-align container">
-                                    <input placeholder="Email Address" id="email" type="email" class="validate">
-                                    <div class="center"> <a class="prev waves-effect waves-light btn"><i class="white-text fa fa-arrow-left"></i>  Back</a> <a class="next waves-effect waves-light btn">Next  <i class="white-text fa fa-arrow-right"></i></a> </div>
-                                </div>
-                            </div>
-                            <div class="carousel-item carousel-fixed-item indigo white-text" href="#three!">
-                                <div class="vertical-align container">
-                                    <input placeholder="Email Address" id="email" type="email" class="validate">
-                                    <div class="center"> <a class="prev waves-effect waves-light btn"><i class="white-text fa fa-arrow-left"></i>  Back</a> <a class="next waves-effect waves-light btn">Next  <i class="white-text fa fa-arrow-right"></i></a> </div>
-                                </div>
-                            </div>
-                            <div class="carousel-item carousel-fixed-item blue white-text" href="#four!">
-                                <div class="vertical-align">
-                                    <h3>All Done</h3>
-                                    <h5></h5> <a a class="btn" onclick="Materialize.toast('The FORM TO END ALL FORMS Has Been Submitted', 4000)" class="startbutton waves-effect waves-light btn">Now Submit This FORM!!!!!!</a>
-                                    <br>
-                                    <br>
-                                    <br>
-                                    <div class="center"> <a class="prev waves-effect waves-light btn"><i class="white-text fa fa-arrow-left"></i>  Back</a> </div>
-                                </div>
-                            </div>
+                    <div class="row">
+                        <div class="col s12">
+                            <ul class="tabs">
+                                <li class="tab col s1"><a href="#test1">1</a></li>
+                                <li class="tab col s1"><a href="#test2">2</a></li>
+                                <li class="tab col s1"><a href="#test3">3</a></li>
+                                <li class="tab col s1"><a href="#test4">4</a></li>
+                                <li class="tab col s1"><a href="#test5">5</a></li>
+                                <li class="tab col s1"><a href="#test6">6</a></li>
+                                <li class="tab col s1"><a href="#test7">7</a></li>
+                                <li class="tab col s1"><a href="#test8">8</a></li>
+                                <li class="tab col s1"><a href="#test9">9</a></li>
+                                <li class="tab col s1"><a href="#test10">10</a></li>
+                                <li class="tab col s1"><a href="#test11">11</a></li>
+                                <li class="tab col s1"><a href="#test12">12</a></li>
+                            </ul>
                         </div>
-                    </form>
-                </div>
-            </div>
-            <!--   Icon Section   -->
-            <div class="row">
-                <div class="col s12 m6">
-                    <div class="icon-block">
-                        <h2 class="center light-blue-text"><i class="material-icons">flash_on</i></h2>
-                        <h5 class="center white-text">Speeds up development</h5>
-                        <p class="white-text light">We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers.</p>
+                        <form>
+                            <div id="test1" class="col s12">
+                                <div class="center">
+                                    <h1 class="white-text">Calculate Your Savings</h1>
+                                    <br>
+                                    <h3 class="white-text">To Begin Click Tab Number 2</h3></div>
+                            </div>
+                            <div id="test2" class="col s12">
+                                <div class="row">
+                                    <div class="input-field col s6">
+                                        <input placeholder="First Name" id="first_name" type="text" class="validate">
+                                        <label for="first_name">First Name</label>
+                                    </div>
+                                    <div class="input-field col s6">
+                                        <input placeholder="Last Name" id="last_name" type="text" class="validate">
+                                        <label for="last_name">Last Name</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="test3" class="col s12">
+                                <div class="row">
+                                    <div class="input-field col s12">
+                                        <input id="email" type="email" class="validate">
+                                        <label for="email">Email Address</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="test4" class="col s12">
+                                <div class="input-field">
+                                    <input id="icon_telephone" type="tel" class="validate">
+                                    <label for="icon_telephone">Telephone Number</label>
+                                </div>
+                            </div>
+                            <div id="test5" class="col s12">
+                                <div class="row">
+                                    <div class="input-field col s12">
+                                        <input id="" class="validate" type="text" value="" pattern="\d{5}-?(\d{4})?">
+                                        <label class="active" for="first_name2">Zip Code</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="test6" class="col s12">
+                                <div class="input-field col s12">
+                                    <select>
+                                        <option value="" disabled selected>Are You A Homeowner?</option>
+                                        <option value="1">Yes</option>
+                                        <option value="2">No</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div id="test7" class="col s12">
+                                <p class="range-field">
+                                    <input type="range" id="test5" min="50" max="1000" />
+                                    <label>What is Your Average Monthly Electric Bill (In Dollars)</label>
+                                </p>
+                            </div>
+                            <div id="test8" class="col s12">
+                                <div class="input-field col s12">
+                                    <select>
+                                        <option value="" disabled selected>How Much Shade Does Your Home Get?</option>
+                                        <option value="1">A Lot Of Shade</option>
+                                        <option value="2">Moderate Shade</option>
+                                        <option value="3">A Little Shade</option>
+                                        <option value="4">No Shade</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div id="test9" class="col s12">
+                                <div class="input-field col s12">
+                                    <select>
+                                        <option value="" disabled selected>What Is Your Annual Household Income?</option>
+                                        <option value="1">$0 - $25,000</option>
+                                        <option value="2">$25,000 - $50,000</option>
+                                        <option value="3">$50,000 - $100,000</option>
+                                        <option value="4">$100,000 - $200,000</option>
+                                        <option value="4">$200,000 +</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div id="test10" class="col s12">
+                                <select>
+                                    <option value="" disabled selected>What Is Your Credit Score?</option>
+                                    <option value="1">Below 500</option>
+                                    <option value="2">500 - 600</option>
+                                    <option value="3">600 - 700</option>
+                                    <option value="4">700 - 800</option>
+                                    <option value="4">Above 800</option>
+                                </select>
+                            </div>
+                            <div id="test11" class="col s12">
+                                <div class="center">
+                                    <h1 class="white-text">Click The Button Below To Calculate Your Savings</h1><a class="btn" class="submit" onclick="Materialize.toast('Thank You, We Are Calculating Your Savings', 3000, 'rounded') // 'rounded' is the class I'm applying to the toast
+    setTimeout(function () {
+        $('ul.tabs').tabs('select_tab', 'test12');
+    }, 2500);">Submit</a></div>
+                            </div>
+                            <div id="test12" class="col s12">
+                                <div class="center">
+                                    <h1 class="white-text">You Can Save $234,947,928,283.99 By Switching To Solar</h1></div>
+                            </div>
+                        </form>
                     </div>
                 </div>
-                <div class="col s12 m6">
-                    <div class="icon-block">
-                        <h2 class="center light-blue-text"><i class="material-icons">group</i></h2>
-                        <h5 class="center white-text">User Experience Focused</h5>
-                        <p class="white-text light">By utilizing elements and principles of Material Design, we were able to create a framework that incorporates components and animations that provide more feedback to users. Additionally, a single underlying responsive system across all platforms allow for a more unified user experience.</p>
+                <!--   Icon Section   -->
+                <div class="row">
+                    <div class="col s12 m6">
+                        <div class="icon-block">
+                            <h2 class="center light-blue-text"><i class="material-icons">flash_on</i></h2>
+                            <h5 class="center white-text">Speeds up development</h5>
+                            <p class="white-text light">We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers.</p>
+                        </div>
+                    </div>
+                    <div class="col s12 m6">
+                        <div class="icon-block">
+                            <h2 class="center light-blue-text"><i class="material-icons">group</i></h2>
+                            <h5 class="center white-text">User Experience Focused</h5>
+                            <p class="white-text light">By utilizing elements and principles of Material Design, we were able to create a framework that incorporates components and animations that provide more feedback to users. Additionally, a single underlying responsive system across all platforms allow for a more unified user experience.</p>
+                        </div>
                     </div>
                 </div>
             </div>
+            <br>
+            <br>
+            <div class="section"> </div>
         </div>
-        <br>
-        <br>
-        <div class="section"> </div>
+        <footer class="page-footer orange">
+            <div class="container">
+                <div class="row">
+                    <div class="col l6 s12">
+                        <h5 class="white-text">Company Bio</h5>
+                        <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
+                    </div>
+                    <div class="col l3 s12">
+                        <h5 class="white-text">Settings</h5>
+                        <ul>
+                            <li><a class="white-text" href="#!">Link 1</a></li>
+                            <li><a class="white-text" href="#!">Link 2</a></li>
+                            <li><a class="white-text" href="#!">Link 3</a></li>
+                            <li><a class="white-text" href="#!">Link 4</a></li>
+                        </ul>
+                    </div>
+                    <div class="col l3 s12">
+                        <h5 class="white-text">Connect</h5>
+                        <ul>
+                            <li><a class="white-text" href="#!">Link 1</a></li>
+                            <li><a class="white-text" href="#!">Link 2</a></li>
+                            <li><a class="white-text" href="#!">Link 3</a></li>
+                            <li><a class="white-text" href="#!">Link 4</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <div class="container"> Designed by <a class="orange-text text-lighten-3" href="https://specx.tech/">Specx Design and Development</a> </div>
+            </div>
+        </footer>
     </div>
-    <footer class="page-footer orange">
-        <div class="container">
-            <div class="row">
-                <div class="col l6 s12">
-                    <h5 class="white-text">Company Bio</h5>
-                    <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
-                </div>
-                <div class="col l3 s12">
-                    <h5 class="white-text">Settings</h5>
-                    <ul>
-                        <li><a class="white-text" href="#!">Link 1</a></li>
-                        <li><a class="white-text" href="#!">Link 2</a></li>
-                        <li><a class="white-text" href="#!">Link 3</a></li>
-                        <li><a class="white-text" href="#!">Link 4</a></li>
-                    </ul>
-                </div>
-                <div class="col l3 s12">
-                    <h5 class="white-text">Connect</h5>
-                    <ul>
-                        <li><a class="white-text" href="#!">Link 1</a></li>
-                        <li><a class="white-text" href="#!">Link 2</a></li>
-                        <li><a class="white-text" href="#!">Link 3</a></li>
-                        <li><a class="white-text" href="#!">Link 4</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="footer-copyright">
-            <div class="container"> Designed by <a class="orange-text text-lighten-3" href="https://specx.tech/">Specx Design and Development</a> </div>
-        </div>
-    </footer>
     <!--  Scripts-->
     <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="js/materialize.js"></script>
