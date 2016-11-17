@@ -16,7 +16,7 @@
     font-size: inherit;
 }
 
-body {
+.background-body {
     background-image: url(../images/solar_panels.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -32,8 +32,12 @@ body {
 
 /*form styles*/
 
-.modal1 {
-    height: 500px;
+.modal1-content {
+    height: 600px;
+}
+
+ul.dropdown-content.select-dropdown li span {
+    color: #000; /* no need for !important :) */
 }
 
 #msform {
