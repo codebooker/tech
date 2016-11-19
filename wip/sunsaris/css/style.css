@@ -26,6 +26,12 @@
     background-color: rgba(0, 0, 0, 0.3);
 }
 
+.bg404 {
+    background-image: url(http://img.pandawhale.com/post-42510-IT-Crowd-Maurice-Moss-fire-gif-6zWo.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 
 /* Form */
 
