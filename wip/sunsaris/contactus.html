@@ -27,15 +27,16 @@
     <link rel="shortcut icon" type="image/ico" href="images/favicon.ico" /> </head>
 
 <body>
-    <!-- Navbar Dropdown Structure -->
+   <!-- Navbar Dropdown Structure -->
     <ul id="dropdown1" class="dropdown-content">
         <li><a class="disabled blue-text text-darken-3" href="#!">Residential</a></li>
-        <li><a class="blue-text text-darken-3" href="#!">Energy Reduction</a></li>
-        <li><a class="blue-text text-darken-3" href="#!">Energy Generation</a></li>
-        <li><a class="blue-text text-darken-3" href="#!">Energy Storage</a></li>
+        <li><a class="blue-text text-darken-3" href="energy-reduction.html">Energy Reduction</a></li>
+        <li><a class="blue-text text-darken-3" href="energy-generation.html">Energy Generation</a></li>
+        <li><a class="blue-text text-darken-3" href="energy-storage.html">Energy Storage</a></li>
     </ul>
     <ul id="dropdown2" class="dropdown-content">
         <li><a class="disabled blue-text text-darken-3" href="#!">Company</a></li>
+        <li><a class="blue-text text-darken-3" href="contactus.html">Contact Us</a></li>
         <li><a class="blue-text text-darken-3" href="partners.html">Partners</a></li>
     </ul>
     <ul id="dropdown3" class="dropdown-content">
@@ -50,7 +51,7 @@
             <a id="logo-container" href="index.html" class="blue-text text-darken-3 brand-logo center"><img style="max-height:55px;padding-top:6px;padding-bottom:5px;" src="images/logo.png"></a>
             <!-- Desktop Nav Items -->
             <ul class="left hide-on-med-and-down">
-                <li><a class="blue-text text-darken-3" href="#1">Home</a></li>
+                <li><a class="blue-text text-darken-3" href="index.html">Home</a></li>
                 <li><a class="blue-text text-darken-3" href="aboutus.html">About Us</a></li>
                 <li><a class="dropdown-button blue-text text-darken-3" href="#!" data-activates="dropdown1">Residential <i class="fa fa-caret-down"></i></a></li>
             </ul>
@@ -78,6 +79,7 @@
                     <li> <a class="collapsible-header blue-text text-darken-3">Company</a>
                         <div class="collapsible-body">
                             <ul>
+                                <li><a class="blue-text text-darken-3" href="contactus.html">Contact Us</a></li>
                                 <li><a class="blue-text text-darken-3" href="partners.html">Partners</a></li>
                             </ul>
                         </div>
@@ -94,7 +96,7 @@
                         </div>
                     </li>
                 </ul>
-                <li><a class="blue-text text-darken-3" href="#3">Tools</a></li>
+                <li><a class="blue-text text-darken-3" href="#5">Tools</a></li>
             </ul>
             <!-- Mobile Nav Menu Button --><a href="#" data-activates="nav-mobile" class="button-collapse"><i class="blue-text text-darken-3 fa fa-bars fa-2x"></i></a></div>
     </nav>
@@ -103,13 +105,45 @@
         <div class="row">
             <div class="col l7 m7 s12">
                 <div class="container">
-                <h3>Contact us</h3>
-                <p>Our mission is to provide the most in-depth and transparent process for educating the client on the benefits and cost savings of implementing a solar savings strategy.   When our solar strategy is property implemented, our clients can expect real cost savings and added value to their real estate.  Solar benefit is black and white, rooted in Science and Math.  Our job is to provide you the education and the numbers to validate your Solar investment, and begin your path to saving hard earned money to the benefit of every client.</p>
+                    <h3>Contact us</h3>
+                    <p>Our mission is to provide the most in-depth and transparent process for educating the client on the benefits and cost savings of implementing a solar savings strategy. When our solar strategy is property implemented, our clients can expect real cost savings and added value to their real estate. Solar benefit is black and white, rooted in Science and Math. Our job is to provide you the education and the numbers to validate your Solar investment, and begin your path to saving hard earned money to the benefit of every client.</p>
+                    <br>
+                    <form id="contact-form" action="" method="post">
+                        <div class="input-field">
+                            <input id="name" type="text" name="Name" required>
+                            <label for="name">Full Name</label>
+                        </div>
+                        <br>
+                        <div class="input-field">
+                            <input id="email" type="email" name="Email" class="validate" required>
+                            <label for="email">Email Address</label>
+                        </div>
+                        <br>
+                        <div class="input-field">
+                            <textarea id="textbox" name="Message" cols="30" rows="6" class="materialize-textarea" required></textarea>
+                            <label for="textbox">Your Message Here</label>
+                        </div>
+                        <br>
+                        <!-- CONFIG -->
+                        <div class="hide">
+                            <input class="hidden" type="text" name="_spamGotcha">
+                            <input type="" name="_subject" value="Contact Form Received"> </div>
+                        <!-- <input type="hidden" name="_cc" value="email@cc.com">
+	                       <!-- /CONFIG -->
+                        <input class="btn blue-grey darken-3 submit" type="submit" value="Send"> </form>
                 </div>
             </div>
             <div class="col l5 m5 s12">
-                <div class="container">
-                <p><strong>Email Address</strong></p>
+                <h5 class="" style="padding-top:10px;text-align:left;"><font style="font-weight: normal;">EMAIL ADDRESS</font></h5>
+                <div class="flow-text paragraph" style="text-align:left;"><a style="color:rgba(0, 0, 0, 0.87);" href="mailto:info@sunsaris.com">info@sunsaris.com</a>&#8203;</div>
+                <h5 class="" style="text-align:left;"><font style="font-weight: normal;">TELEPHONE NUMBER</font></h5>
+                <div class="flow-text paragraph" style="text-align:left;"><a style="color:rgba(0, 0, 0, 0.87);" href="tel:18777270919">1 (877) 727-0919</a></div>
+                <h5 class="" style="text-align:left;"><font style="font-weight: normal;">PHYSICAL ADDRESS</font></h5>
+                <div class="flow-text paragraph" style="text-align:left;">416 Commerce Way Suite 140
+                    <br>Longwood, FL 32750</div>
+                <br>
+                <div class="">
+                    <iframe allowtransparency="true" frameborder="0" scrolling="no" style="width: 100%; height: 250px; margin-top: 10px; margin-bottom: 15px;" src="//www.weebly.com/weebly/apps/generateMap.php?map=google&amp;elementid=810212216384017049&amp;ineditor=0&amp;control=3&amp;width=auto&amp;height=250px&amp;overviewmap=0&amp;scalecontrol=0&amp;typecontrol=0&amp;zoom=13&amp;long=-81.3555983&amp;lat=28.6932296&amp;domain=www&amp;point=1&amp;align=1&amp;reseller=false"></iframe>
                 </div>
             </div>
         </div>
@@ -129,16 +163,17 @@
                 <div class="col l3 s12">
                     <h5 class="white-text">Settings</h5>
                     <ul>
-                        <li><a class="white-text" href="#!">Link 1</a></li>
-                        <li><a class="white-text" href="#!">Link 2</a></li>
-                        <li><a class="white-text" href="#!">Link 3</a></li>
-                        <li><a class="white-text" href="#!">Link 4</a></li>
+                        <li><a class="white-text" href="#!">Sitemap</a></li>
+                        <li><a class="white-text" href="privacypolicy.html">Privacy Policy</a></li>
+                        <li><a class="white-text" href="stafflogin.html">Staff Login</a></li>
+                        <li><a class="white-text" href="contactus.html">Contact Us</a></li>
                     </ul>
                 </div>
                 <div class="col l3 s12">
                     <h5 class="white-text">Connect</h5>
                     <ul>
-                        <li><a class="white-text" href="#!"><i class="fa fa-3x fa-facebook-official"></i>  </a> <a class="white-text" href="#!"><i class="fa fa-3x fa-envelope"></i>  </a> <a class="white-text" href="#!"><i class="fa fa-3x fa-instagram"></i></a></li>
+                        <li><span class=""><a class="white-text" href="https://www.facebook.com/sunsarisholdings" target="_blank"><span class="fa fa-facebook-official fa-2x"></span></a>&nbsp;&nbsp;<a class="white-text" href="mailto:online.inquiries@sunsaris.com" target="_blank"><span class="fa fa-envelope fa-2x"></span></a>&nbsp;&nbsp;<a class="white-text" href="https://www.instagram.com/sunsarisinc/" target="_blank"><span class="fa fa-instagram fa-2x"></span></a></span>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -153,126 +188,12 @@
             <div class="container"> Designed by <a class="grey-text" href="https://specx.tech/">Specx Design and Development</a> </div>
         </div>
     </footer>
-    <!-- Modal 1's Structure -->
-    <div id="modal1" class="modal modal1">
-        <div class="modal-content modal1-content grey darken-3">
-            <form id="msform">
-                <!-- progressbar -->
-                <ul id="progressbar">
-                    <li class="active">Personal Info </li>
-                    <li>Email and Phone Number </li>
-                    <li>Zip Code </li>
-                    <li>Homeowner </li>
-                    <li>Electric Bill </li>
-                    <li>Shade Amount </li>
-                    <li>Annual Household Income </li>
-                    <li>Credit Score </li>
-                </ul>
-                <!-- fieldsets -->
-                <fieldset>
-                    <h2 class="fs-title">Personal Information</h2>
-                    <h3 class="fs-subtitle">Please Enter Your First And Last Names</h3>
-                    <input placeholder="First Name" id="first_name" type="text" class="validate">
-                    <input placeholder="Last Name" id="last_name" type="text" class="validate">
-                    <input type="button" name="next" class="next action-button" value="Next" /> </fieldset>
-                <fieldset>
-                    <h2 class="fs-title">Email and Phone Number</h2>
-                    <h3 class="fs-subtitle">Please Enter Your Email Address and Phone Number</h3>
-                    <input placeholder="Email Address" id="email" type="email" class="validate">
-                    <input placeholder="Telephone Number" id="telephone" type="tel" class="validate">
-                    <br>
-                    <input type="button" name="previous" class="previous action-button" value="Previous" />
-                    <input type="button" name="next" class="next action-button" value="Next" /> </fieldset>
-                <fieldset>
-                    <h2 class="fs-title">Zip Code</h2>
-                    <h3 class="fs-subtitle">Please Enter Your Five Digit Zip Code</h3>
-                    <input placeholder="Zip Code" id="" class="validate" type="text" value="" pattern="\d{5}-?(\d{4})?">
-                    <br>
-                    <input type="button" name="previous" class="previous action-button" value="Previous" />
-                    <input type="button" name="next" class="next action-button" value="Next" /> </fieldset>
-                <fieldset>
-                    <h2 class="fs-title">Homeowner</h2>
-                    <h3 class="fs-subtitle">Are Your A Homeowner?</h3>
-                    <select>
-                        <option value="" disabled selected>Are You A Homeowner?</option>
-                        <option value="1">Yes</option>
-                        <option value="2">No</option>
-                    </select>
-                    <br>
-                    <input type="button" name="previous" class="previous action-button" value="Previous" />
-                    <input type="button" name="next" class="next action-button" value="Next" /> </fieldset>
-                <fieldset>
-                    <h2 class="fs-title">Electric Bill</h2>
-                    <h3 class="fs-subtitle">What is Your Average Monthly Electric Bill (In Dollars)</h3>
-                    <input type="range" id="test5" min="50" max="1000" />
-                    <br>
-                    <input type="button" name="previous" class="previous action-button" value="Previous" />
-                    <input type="button" name="next" class="next action-button" value="Next" /> </fieldset>
-                <fieldset>
-                    <h2 class="fs-title">Shade Amount</h2>
-                    <h3 class="fs-subtitle">How Much Shade Does Your Home Get?</h3>
-                    <select>
-                        <option value="" disabled selected>How Much Shade Does Your Home Get?</option>
-                        <option value="1">A Lot Of Shade</option>
-                        <option value="2">Moderate Shade</option>
-                        <option value="3">A Little Shade</option>
-                        <option value="4">No Shade</option>
-                    </select>
-                    <br>
-                    <input type="button" name="previous" class="previous action-button" value="Previous" />
-                    <input type="button" name="next" class="next action-button" value="Next" /> </fieldset>
-                <fieldset>
-                    <h2 class="fs-title">Annual Household Income</h2>
-                    <h3 class="fs-subtitle">What Is Your Annual Household Income?</h3>
-                    <select>
-                        <option value="" disabled selected>What Is Your Annual Household Income?</option>
-                        <option value="1">$0 - $25,000</option>
-                        <option value="2">$25,000 - $50,000</option>
-                        <option value="3">$50,000 - $100,000</option>
-                        <option value="4">$100,000 - $200,000</option>
-                        <option value="4">$200,000 +</option>
-                    </select>
-                    <br>
-                    <input type="button" name="previous" class="previous action-button" value="Previous" />
-                    <input type="button" name="next" class="next action-button" value="Next" /> </fieldset>
-                <fieldset>
-                    <h2 class="fs-title">Credit Score</h2>
-                    <h3 class="fs-subtitle">What Is Your Credit Score?</h3>
-                    <select>
-                        <option value="" disabled selected>What Is Your Credit Score?</option>
-                        <option value="1">Below 500</option>
-                        <option value="2">500 - 600</option>
-                        <option value="3">600 - 700</option>
-                        <option value="4">700 - 800</option>
-                        <option value="4">Above 800</option>
-                    </select>
-                    <input type="button" name="previous" class="previous action-button" value="Previous" />
-                    <input type="submit" name="submit" class="submit action-button" value="Calculate" onclick="Materialize.toast('Thank You, We Are Calculating Your Savings', 3000, 'rounded');$('#modal1').modal('close');setTimeout(function () {
-        $('#modal2').modal('open');
-    }, 2500);" /> </fieldset>
-            </form>
-        </div>
-        <div class="modal-footer grey darken-3"> <a href="#!" class="white-text modal-action modal-close waves-effect waves-green btn-flat">Close</a> </div>
-    </div>
-    <!-- Modal 2's Structure -->
-    <div id="modal2" class="modal">
-        <div class="modal-content">
-            <h1 class="center blue-text text-darken-3">You Could Save $x.xx Per Year By Switching To Solar With Sunsaris</h1> </div>
-        <div class="modal-footer grey lighten-4"> <a href="#!" class=" modal-action blue-text text-darken-3 modal-close waves-effect waves-green btn-flat">Close</a> </div>
-    </div>
     <!--  Scripts-->
     <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
     <script src="js/init.js"></script>
     <script src="js/form.js"></script>
     <script src="js/jquery.easing.min.js"></script>
-    <!-- Modal Trigger Script -->
-    <script type="text/javascript">
-        $(document).ready(function () {
-            // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
-            $('.modal').modal();
-        });
-    </script>
     <!-- Form Dropdown Trigger Script -->
     <script type="text/javascript">
         $(document).ready(function () {
