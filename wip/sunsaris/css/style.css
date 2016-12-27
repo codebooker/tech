@@ -27,9 +27,8 @@
 }
 
 .bg404 {
-    background-image: url(http://img.pandawhale.com/post-42510-IT-Crowd-Maurice-Moss-fire-gif-6zWo.gif);
+    background: url(http://img.pandawhale.com/post-42510-IT-Crowd-Maurice-Moss-fire-gif-6zWo.gif) no-repeat center center fixed;
     background-size: cover;
-    background-repeat: no-repeat;
 }
 
 
@@ -43,7 +42,8 @@
 }
 
 ul.dropdown-content.select-dropdown li span {
-    color: #000; /* no need for !important :) */
+    color: #000;
+    /* no need for !important :) */
 }
 
 #msform {
