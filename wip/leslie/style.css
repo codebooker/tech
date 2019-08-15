@@ -1,0 +1,79 @@
+h1 {
+  font-size:30px;
+  text-align:center;
+  font-family: 'Arial', cursive;
+  padding: 10% 0;
+}
+
+#otherthing {
+  color: indianred;
+  font-size: 40px;
+}
+
+#hername {
+  font-size:40px;
+}
+
+#hernamebottom {
+  font-size:40px;
+  color:#58a7af;
+}
+
+#morethan {
+    font-weight: 400;
+    padding-top: 500px;
+}
+
+#sadred {
+    color: indianred;
+}
+
+#policy {
+  color: indianred;
+  margin-bottom: -140px;
+  margin-top: -140px;
+}
+
+#later {
+   display: none;
+}
+
+#toper {
+  margin-bottom:-290px;
+  font-size:45px;
+  margin-top:-150px;
+  color:#3f6c7d;
+}
+
+#changingword {
+  color: indianred;
+}
+
+#thing {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom:-170px;
+  width: 20%;
+}
+
+#thing2 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom:10px;
+  width: 20%;
+}
+
+#addr {
+    font-size:21px;
+ margin-bottom: -300px;
+  margin-top: -300px;
+}
+
+#phn {
+    font-size:40px;
+    margin-bottom: -300px;
+  margin-top: -280px;
+    
+}
