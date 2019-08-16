@@ -91,7 +91,7 @@
 }
 @media (max-aspect-ratio: 16/9) {
   .video-foreground {
-    width: 300%;
+    width: 420%;
     left: -100%;
   }
 }
