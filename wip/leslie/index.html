@@ -12,10 +12,12 @@
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js?ver=1.4.2'></script> 
   <script  src="js/FadeOutScript.js"></script>
+    <script async src="https://www.youtube.com/iframe_api"></script>
+    <script src="js/videobg.js"></script>
 </head>
 <body class="darkbluebackground">
   <nav class="navbar" role="navigation" id="">
-    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo right hide-on-large-only"><img class="navimage" src="images/banner.png"></a>
+    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo right hide-on-large-only"><img class="navimagetiny" src="images/banner.png"></a>
                                        <a id="logo-container" href="#" class="brand-logo hide-on-med-and-down"><img class="navimage" src="images/banner.png"></a>
       <div class="right hide-on-med-and-down">
           <h5 class="center darkbluetext navtextleslie" id="">Call Lea Ann Leslie At</h5>
@@ -30,7 +32,7 @@
           <li><a href="#">Navbar Link</a></li>
           <li><a href="#">Navbar Link</a></li>
       </ul>
-      <a href="#" data-target="nav-mobile" class="sidenav-trigger darkbluetext navlinks"><i style="font-size:46pt" class="material-icons">menu</i></a>
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger darkbluetext navlinks"><i style="font-size:30pt" class="material-icons">menu</i></a>
     </div>
       <div class="dropnav">
         <div class="container">
@@ -44,12 +46,35 @@
         </div>
     </div>
   </nav>
-    
     <br><br><br>
     <div class="section">
-    <div class="container lightgraybackground">
+        <div class="videooverlay">
+        <div class="video-background">
+            <div class="video-foreground">
+                <iframe id="ytplayer" src="https://www.youtube.com/embed/156yLMl8BpU?ecver=1controls=0&showinfo=0&rel=0&autoplay=1&loop=0&playlist=W0LHTWG-UmQ&enablejsapi=1" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        
+        
+        <div class="container">
+      <br>
+      <h1 style="text-shadow:-2px -2px 0 #3f6c7d,2px -2px 0 #3f6c7d,-2px 2px 0 #3f6c7d,2px 2px 0 #3f6c7d;font-size:;" class="header center white-text">We Solve Your Insurance Needs</h1>
+      <div class="row center">
+        <h5 style="text-shadow:-2px -2px 0 #3f6c7d,2px -2px 0 #3f6c7d,-2px 2px 0 #3f6c7d,2px 2px 0 #3f6c7d;font-size:;" class="header col s12 light white-text">A modern FILLER text text responsive front-end framework based on Material Design</h5>
+          <p style="text-shadow:-2px -2px 0 #3f6c7d,2px -2px 0 #3f6c7d,-2px 2px 0 #3f6c7d,2px 2px 0 #3f6c7d;font-size:;" class="white-text">We did FILLER text most of the heavy lifting for you to provide a default stylings that incorporate our custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers.</p>
+      </div>
+      <div class="row center">
+        <a href="#" id="download-button" class="btn-large waves-effect waves-light dropnav hoverable">Get A Quote</a>
+      </div>
+      <br><br><br>
+
+    </div>
+        
+        
       <!--   Icon Section   -->
-      <div class="row">
+      <div class="row lightgraybackground">
           
         <div class="col s12 m6 lightgraybackground">
           <div class="icon-block center">
@@ -58,17 +83,15 @@
             <div class="container"><img class="responsive-img z-depth-4" src="images/LeaAnnHomeImage.jpg"></div>
             <h4 class="belowphotohomepage center darkbluetext"><span id="theables"><br>• <span id="changingword">Avail</span><u style="color:indianred;">able</u><br></span>
             <br><span id="afterables"><span id="hernamebottom">Lea Ann Leslie Insurance</span>
-            <br><span id="taglinebottom"><i>"An Assur<u>able</u> Difference"</i></span></span></h4>
+            <br><span id="taglinebottom"><i>"An Assur<u>able</u> Difference"</i></span></span></h4><br>
           </div>
         </div>  
           
           
         <div class="col s12 m6">
-        <div class="show-on-small hide-on-med-and-up"><hr ></div>
-        
+        <div class="show-on-small hide-on-med-and-up"><hr></div>
           <div class="icon-block">
-            <h2 class="center darkbluetext"><i class="material-icons">flash_on</i></h2>
-            <h5 class="center darkbluetext">Yes, This Website Is VERY Plain Right Now<br>It Is A Work In Progress<br>This Site Is Just Testing Out<br>Some Basic Design Ideas</h5>
+            <h4 class="center darkbluetext">This Is A Work In Progress<br>This Site Is Just Testing Out<br>Some Basic Design Ideas</h4>
 
             <p class="darkbluetext">We did FILLER text most of the heavy lifting for you to provide a default stylings that incorporate our custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers.</p>
               <p class="darkbluetext">We did FILLER text most of the heavy lifting for you to provide a default stylings that incorporate our custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers.</p>
@@ -80,20 +103,7 @@
           
       </div>
         
-    <div class="container">
-        <div class="show-on-small hide-on-med-and-up"><hr ></div>
-      <br><br>
-      <h1 class="header center darkbluetext">We Solve Your Insurance Needs</h1>
-      <div class="row center">
-        <h5 class="header col s12 light darkbluetext">A modern FILLER text text responsive front-end framework based on Material Design</h5>
-          <p class="darkbluetext">We did FILLER text most of the heavy lifting for you to provide a default stylings that incorporate our custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers.</p>
-      </div>
-      <div class="row center">
-        <a href="#" id="download-button" class="btn-large waves-effect waves-light dropnav hoverable">Get A Quote</a>
-      </div>
-      <br><br>
-
-    </div><br>
+    <br>
     </div></div><br>
 
   <footer class="page-footer footerbackground">
