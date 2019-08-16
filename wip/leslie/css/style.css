@@ -1,0 +1,59 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+#changingword {
+  color: indianred;
+}
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+	font-size: inherit;
+}
+.nooverflow {
+    overflow: hidden;
+}
+.navbar {
+    height:150px;
+    background-color:#f7f7f7;
+}
+.navimage {
+    max-width:350px;
+}
+.navlinks {
+    height:150px;
+    padding-top: 3vh;
+}
+.dropnav{
+    background-color:#58A7AF !important;
+}
+.darkbluetext {
+    color:#3f6c7d;
+}
+.darkbluebackground {
+    background-color: #3f6c7d;
+}
+.lightgraybackground {
+    background-color:#f7f7f7;
+}
+.navtextleslie {
+    margin-bottom:-40px;
+    margin-top:35px;
+}
+.belowphotohomepage {
+    margin-top:-5px;
+}
+#afterables {
+    display: none;
+}
+#taglinebottom {
+    color: indianred;
+}
+.footerbackground {
+    background-color:#f7f7f7;
+}
