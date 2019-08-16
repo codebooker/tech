@@ -52,6 +52,14 @@
 .belowphotohomepage {
     margin-top:-5px;
 }
+#contactleaann {
+    
+}
+#contactleaannphone {
+    margin-top:-10pt;
+    margin-bottom:-10pt;
+    font-size: 35pt;
+}
 #afterables {
     display: none;
 }
@@ -61,7 +69,6 @@
 .footerbackground {
     background-color:#f7f7f7;
 }
-
 
 /*Video CSS*/
 
@@ -91,7 +98,7 @@
 }
 @media (max-aspect-ratio: 16/9) {
   .video-foreground {
-    width: 420%;
+    width: 300%;
     left: -100%;
   }
 }
