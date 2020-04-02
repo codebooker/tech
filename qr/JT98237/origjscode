@@ -1,0 +1,31 @@
+var passwords = new Array();
+    passwords[0] = "2030MAY25";
+    passwords[1] = "2030may25";
+    passwords[2] = "2030May25";
+    // This is your array of passwords. You can add as many as you want!
+
+    var passwordInput=prompt("Please Enter The Expiration Date From The ID Card As It Is Written (Example: 2016JUNE01)");
+    // This will ask for the user to enter their password
+
+    if (inArray(passwordInput, passwords)===true) {
+    // This uses the inArray function to check if the users input is found within the array.
+    document.getElementById("dob").innerHTML="DoB: &nbsp;06/21/1996";
+    document.getElementById("emcontname").innerHTML="Emergency Contact:&nbsp; John Tawes -&nbsp;";
+    document.getElementById("emcontnum").innerHTML="&nbsp;(443) 735-6455 (cell)";
+    document.getElementById("drname").innerHTML="Doctor:&nbsp; Dr. Vijay Karumbunathan -&nbsp;";
+    document.getElementById("drnum").innerHTML="&nbsp;(410) 968-1200";
+    document.getElementById("blood").innerHTML="Blood Type: O-";
+    document.getElementById("allergy").innerHTML="Allergies: Pollen, Dust, Some Types Of Pet Hair";
+    document.getElementById("medcon").innerHTML="Medical Conditions: Asthma";
+    document.getElementById('hiddenContent').style.visibility="visible";
+    // If the password is found then it sets content of the <div> and makes it possible to view the hidden content.
+        }
+        else {
+        document.getElementById("result").innerHTML="Access Code Incorrect";
+        // If the password is not found then it sets the content of the <div>
+            }
+
+            // This function checks if a variable is found within an array
+            function inArray(variable, array) {
+            var length = array.length;
+            for(var i = 0; i < length; i++) { if(array[i]==variable) return true; } return false; }
