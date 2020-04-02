@@ -5,13 +5,14 @@
     <meta charset="utf-8" />
     <meta content="IE=Edge,chrome=1" http-equiv="X-UA-Compatible" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>Emergency Info</title>
+    <title>Emergency Medical Info</title>
     <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
     <link href="/application.css" media="all" rel="stylesheet" />
 </head>
 
 <body>
-    <div class="div" style="padding:10px;">
+    <div id="result">Waiting for password input...</div>
+    <div id="hiddenContent" class="div" style="visibility:hidden;padding:10px;">
         <h1><span style="font-size: 18.0pt; mso-bidi-font-size: 16.0pt; line-height: 107%; font-family: 'Calibri','sans-serif';">Emergency Medical Information</span></h1>
         <p class="MsoNormal"><span style="font-size: 12.0pt; mso-bidi-font-size: 11.0pt; line-height: 107%;">&nbsp;</span></p>
         <p class="MsoNormal"><span style="font-size: 14.0pt; mso-bidi-font-size: 11.0pt; line-height: 107%;">Last Update: &nbsp;03/26/2020</span></p>
@@ -30,6 +31,36 @@
 | \==================================================-->
     <!--Placed at the end of the document so the pages load faster
     <script src="/assets/application1.js"></script>-->
+    <script>
+    var passwords = new Array();
+passwords[0] = "2030MAY25";
+passwords[1] = "2030may25";
+passwords[2] = "2030May25";
+// This is your array of passwords. You can add as many as you want!
+
+var passwordInput=prompt("Please Enter The Expiration Date From The ID Card As It Is Written (Example: 2016JUNE01)");
+// This will ask for the user to enter their password
+
+if (inArray(passwordInput, passwords)===true) {
+    // This uses the inArray function to check if the users input is found within the array.
+    //document.getElementById("result").innerHTML="password found";
+    document.getElementById('hiddenContent').style.visibility="visible";
+    // If the password is found then it sets content of the <div> and makes it possible to view the hidden content.
+}
+else {
+    document.getElementById("result").innerHTML="Access Code Incorrect";
+    // If the password is not found then it sets the content of the <div>
+}
+
+// This function checks if a variable is found within an array
+function inArray(variable, array) {
+    var length = array.length;
+    for(var i = 0; i < length; i++) {
+        if(array[i] == variable) return true;
+    }
+    return false;
+}
+</script>
 </body>
 
 </html>
